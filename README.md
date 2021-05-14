@@ -1,24 +1,11 @@
-# vue-template
-
-## Project setup
+## 运行项目
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+1. git clone https://github.com/monkeying-boy/vue-template.git
+2. cd vue-template
+3. yarn install or npm install
+4. yarn dev or npm run dev
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## commit 提交规范
+1. type
+ 提交 commit 的类型，包括以下几种

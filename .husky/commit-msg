@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo "执行 commitlint --config commitlint.config.js --edit"
-# yarn commitlint --config commitlint.config.js --edit
+echo "执行 commitlint"
+yarn commitlint

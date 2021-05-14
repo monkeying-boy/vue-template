@@ -5,17 +5,19 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "cz": "git-cz",
+    "commit": "git-cz",
     "lint": "vue-cli-service lint --no-fix",
     "lint-fix": "vue-cli-service lint --fix",
     "stylelint": "stylelint src/**/*.{html,vue,css,sass,scss} --no-fix",
     "stylelint-fix": "stylelint src/**/*.{html,vue,css,sass,scss} --fix",
-    "prepare": "husky install"
+    "commitlint": "commitlint --edit",
+    "release": "standard-version",
+    "initChangelog": "commitizen init mol-conventional-changelog --save-dev --save-exact --force",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w"
   },
   "dependencies": {
     "axios": "0.21.1",
     "core-js": "3.6.5",
-    "cz-conventional-emoji": "^1.0.2",
     "vue": "2.6.11"
   },
   "devDependencies": {
@@ -30,27 +32,28 @@
     "commitizen": "^4.2.4",
     "commitlint-config-cz": "^0.13.2",
     "compression-webpack-plugin": "5.0.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^6.3.0",
     "eslint": "6.7.2",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-import-resolver-webpack": "0.13.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-vue": "7.9.0",
+    "gitmoji-cli": "^4.1.0",
     "husky": "^6.0.0",
     "less": "4.1.1",
     "less-loader": "7.0.0",
     "lint-staged": "11.0.0",
+    "mol-conventional-changelog": "^1.4.0",
+    "standard-version": "^9.3.0",
     "stylelint": "13.13.1",
     "stylelint-config-standard": "22.0.0",
     "stylelint-order": "4.1.0",
     "svg-sprite-loader": "6.0.6",
     "vue-template-compiler": "2.6.11"
   },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-emoji"
-    }
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
@@ -59,5 +62,10 @@
     "src/**/*.{html,vue,css,sass,scss}": [
       "yarn stylelint"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/mol-conventional-changelog"
+    }
   }
 }

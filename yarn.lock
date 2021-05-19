@@ -3183,6 +3183,17 @@ conventional-changelog-atom@^2.0.8:
   dependencies:
     q "^1.5.1"
 
+conventional-changelog-cli@^2.1.1:
+  version "2.1.1"
+  resolved "http://192.168.200.225/conventional-changelog-cli/-/conventional-changelog-cli-2.1.1.tgz#7a11980bc399938e0509d2adf8e7a0e213eb994e"
+  integrity sha1-ehGYC8OZk44FCdKt+Oeg4hPrmU4=
+  dependencies:
+    add-stream "^1.0.0"
+    conventional-changelog "^3.1.24"
+    lodash "^4.17.15"
+    meow "^8.0.0"
+    tempfile "^3.0.0"
+
 conventional-changelog-codemirror@^2.0.8:
   version "2.0.8"
   resolved "http://192.168.200.225/conventional-changelog-codemirror/-/conventional-changelog-codemirror-2.0.8.tgz#398e9530f08ce34ec4640af98eeaf3022eb1f7dc"
@@ -3291,7 +3302,7 @@ conventional-changelog-writer@^4.0.18:
     split "^1.0.0"
     through2 "^4.0.0"
 
-conventional-changelog@3.1.24:
+conventional-changelog@3.1.24, conventional-changelog@^3.1.24:
   version "3.1.24"
   resolved "http://192.168.200.225/conventional-changelog/-/conventional-changelog-3.1.24.tgz#ebd180b0fd1b2e1f0095c4b04fd088698348a464"
   integrity sha1-69GAsP0bLh8AlcSwT9CIaYNIpGQ=
@@ -10144,6 +10155,19 @@ tar@^6.0.2:
     minizlib "^2.1.1"
     mkdirp "^1.0.3"
     yallist "^4.0.0"
+
+temp-dir@^2.0.0:
+  version "2.0.0"
+  resolved "http://192.168.200.225/temp-dir/-/temp-dir-2.0.0.tgz#bde92b05bdfeb1516e804c9c00ad45177f31321e"
+  integrity sha1-vekrBb3+sVFugEycAK1FF38xMh4=
+
+tempfile@^3.0.0:
+  version "3.0.0"
+  resolved "http://192.168.200.225/tempfile/-/tempfile-3.0.0.tgz#5376a3492de7c54150d0cc0612c3f00e2cdaf76c"
+  integrity sha1-U3ajSS3nxUFQ0MwGEsPwDiza92w=
+  dependencies:
+    temp-dir "^2.0.0"
+    uuid "^3.3.2"
 
 terser-webpack-plugin@^1.4.3, terser-webpack-plugin@^1.4.4:
   version "1.4.5"

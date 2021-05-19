@@ -1,6 +1,6 @@
 {
   "name": "vue-template",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -13,7 +13,7 @@
     "commitlint": "commitlint --edit",
     "release": "standard-version",
     "initChangelog": "commitizen init cz-conventional-changelog --save-dev --save-exact --force",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
     "axios": "0.21.1",
@@ -32,6 +32,7 @@
     "commitizen": "^4.2.4",
     "commitlint-config-cz": "^0.13.2",
     "compression-webpack-plugin": "5.0.1",
+    "conventional-changelog-cli": "^2.1.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "6.7.2",
     "eslint-config-airbnb-base": "14.2.1",
